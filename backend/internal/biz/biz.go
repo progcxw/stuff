@@ -3,9 +3,9 @@ package biz
 import (
 	"context"
 
-	"TimeLine/internal/biz/router"
-	"TimeLine/internal/config"
-	"TimeLine/internal/consts"
+	"TimeLine/backend/internal/biz/router"
+	"TimeLine/backend/internal/config"
+	"TimeLine/backend/internal/consts"
 )
 
 func Start(ctx context.Context) {

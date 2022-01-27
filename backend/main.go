@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"TimeLine/internal/biz"
-	"TimeLine/internal/consts"
-	"TimeLine/internal/pkg/gorm"
+	"TimeLine/backend/internal/biz"
+	"TimeLine/backend/internal/consts"
+	"TimeLine/backend/internal/pkg/gorm"
 
 	log "github.com/sirupsen/logrus"
 )
