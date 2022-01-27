@@ -3,7 +3,7 @@ package gorm
 import (
 	"fmt"
 
-	"TimeLine/internal/config"
+	"TimeLine/backend/internal/config"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/driver/mysql"

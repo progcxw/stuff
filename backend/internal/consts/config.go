@@ -1,7 +1,7 @@
 package consts
 
 import (
-	"TimeLine/internal/config"
+	"TimeLine/backend/internal/config"
 
 	log "github.com/sirupsen/logrus"
 )
