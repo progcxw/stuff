@@ -1,0 +1,178 @@
+/* pages/talksheet/talksheet.wxss */
+.comments{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin: 20rpx 0;
+}
+
+.comments .h{
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;   
+  background: #fff;
+  height: 84rpx;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.comments .h .item{
+  display: inline-block;
+  height: 82rpx;
+  width: 50%;
+  padding: 0 15rpx;
+  text-align: center;
+}
+
+.comments .h .item .txt{
+  display: inline-block;
+  height: 82rpx;
+  padding: 0 20rpx;
+  line-height: 82rpx;
+  color: #333;
+  font-size: 30rpx;
+  width: 170rpx;
+}
+
+.comments .h .item.active .txt{
+  color: #ab2b2b;
+  border-bottom: 4rpx solid #ab2b2b;
+}
+
+.comments .b{
+  margin-top: 0rpx;
+  padding-left:30rpx;
+  height: auto;
+  width: 720rpx;
+}
+
+.comments .b.no-h{
+  margin-top: 0;
+}
+
+.comments .item{
+  height: auto;
+  width: 720rpx;
+  overflow: hidden;
+  padding-bottom: 0rpx;
+}
+
+.comments .comment{
+  width: 720rpx;
+  padding-right: 30rpx;
+  line-height: 45.8rpx;
+  font-size: 29rpx;
+  margin-bottom: 16rpx;
+}
+
+.comments .imgs{
+  width: 720rpx;
+  height: 150rpx;
+  margin-bottom: 25rpx;
+}
+
+.comments .imgs .img{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 28rpx;
+}
+
+/* 顶上的提示 */
+
+.top {
+  margin-top: 10rpx;
+  background: #ffde57;
+  padding: 15px 0;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #999;
+  border-top: 2rpx solid #999;
+}
+
+.top .msg {
+  color: #000;
+  margin-left: 30rpx;
+}
+
+.top .item-group {
+  width: 750rpx;
+  padding-bottom: 10px;
+  padding: 0 31.25rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top .item-group .item {
+  align-items: center;
+  font-size: 25rpx;
+  color: #000;
+}
+
+/* input */
+
+.input-pop-box {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  bottom: 0;
+}
+
+.input-pop {
+  width: 100%;
+  height: auto;
+  max-height: 780rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 9;
+  bottom: 0rpx;
+}
+
+.input-pop-box .input-pop .title {
+  padding-left: 15rpx;
+}
+
+.input-pop-box .input-pop .input {
+  display: flex;
+  background: #fff;
+  font-size: 29rpx;
+  color: #333;
+  height: auto;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+  overflow: hidden;
+}
+
+.input-pop-box .input-pop .content {
+  border: 1rpx solid #eee;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  background: #eee;
+  overflow: hidden;
+  height: 65rpx;
+  width: 550rpx;
+}
+
+.input-pop-box .input-pop input {
+  display: block;
+  height: 1.4rem;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: UICTFontTextStyleBody;
+  min-height: 1.4rem;
+  margin-bottom: 40rpx;
+}
+
+.input-pop-box .input-pop .send {
+  width: 120rpx;
+  height: 65rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background: #ffde57;
+  font-size: 30rpx;
+  border: 3rpx solid #333;
+  margin-left: 20rpx;
+}

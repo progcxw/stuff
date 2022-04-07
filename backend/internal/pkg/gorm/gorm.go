@@ -3,7 +3,7 @@ package gorm
 import (
 	"fmt"
 
-	"TimeLine/backend/internal/config"
+	"gamestuff/backend/internal/pkg/config"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/driver/mysql"

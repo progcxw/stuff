@@ -1,0 +1,9 @@
+<!--pages/ucenter/identify/identify.wxml-->
+<view class="container">
+  <text class='txt'>
+请将工作证或学生证发送至exstuff@163.com进行人工身份认证
+认证后方可发布二手商品～
+系统自动认证正在开发中，敬请期待～
+</text>
+
+</view>

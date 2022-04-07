@@ -1,0 +1,75 @@
+<view class="top-pop-box">
+  <view class="top-pop">
+    <view class="content">
+      <image class='img' mode='aspectFill' bindtap='toGoods' data-id='{{goods.id}}' src='{{goods.primary_pic_url}}'></image>
+      <view class='info'>
+        <view class='name' bindtap='toGoods' data-id='{{goods.id}}'>{{goods.name}}</view>
+        <view class='order'>
+          <view class='price' bindtap='toGoods' data-id='{{goods.id}}'>¥ {{goods.price}}</view>
+          <view class='btn' bindtap='buy'>立即购买</view>
+        </view>
+        <view class='msg'>交易前聊一聊</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='news'>
+  <scroll-view scroll-y="true" bindscrolltoupper="more" scroll-top="{{scroll_top}}" wx:key='' class='scroll'>
+    <view class="historycon">
+
+      <view wx:for="{{history_list}}" wx:key="{{index}}">
+
+        <!-- 自己发送 -->
+        <view class='history' wx:if="{{((is_u1 && item.u1_to_u2) || (!is_u1 && !item.u1_to_u2)) && item.message_type!=2}}">
+        <!-- 
+          <view class='time-view'>
+            <text class='time'>{{item.send_time}}</text>
+          </view>
+-->
+          <view class='my_right'>
+            <view class='page_row'>
+              <text class='new_txt'>{{item.message_body}}</text>
+              <view class='sanjiao my'></view>
+              <image class='new_img' mode='aspectFill' src='{{my_avatar}}'></image>
+            </view>
+          </view>
+        </view>
+
+        <!-- 对方发送 -->
+        <view class='history' wx:elif="{{item.message_type!=2}}" id="msg{{item.send_time}}">
+       <!--
+          <view class='time-view'>
+            <text class='time'>{{item.send_time}}</text>
+          </view>
+-->
+          <view class='you_left'>
+            <view class='page_row'>
+              <image class='new_img' mode='aspectFill' src='{{other_side.avatar_url}}'></image>
+              <view class='sanjiao you'></view>
+              <text class='new_txt'>{{item.message_body}}</text>
+
+            </view>
+          </view>
+        </view>
+
+      </view>
+      <view id="hei"></view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<view class="input-pop-box">
+  <view class="input-pop">
+
+    <view class="input">
+
+      <view class="content">
+        <input class='' confirm-hold="true" placeholder="" maxlength='800' confirm-type="done" bindconfirm='done' value='{{typing}}' bindinput="inputChange" bindconfirm='sendMsg' />
+      </view>
+      <view class='send' bindtap='sendMsg'>发送</view>
+    </view>
+  </view>
+</view>
