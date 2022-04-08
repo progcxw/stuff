@@ -2,6 +2,7 @@ package router
 
 import (
 	"context"
+	"gamestuff/backend/internal/controller"
 	"net/http"
 	"os"
 	"os/signal"
@@ -12,6 +13,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
+)
+
+var (
+	categoryController = controller.CategoryController{}
 )
 
 func ServeHTTP() {
@@ -26,9 +31,11 @@ func ServeHTTP() {
 	gracefulShutdown(srv)
 }
 
-
 func registerRouter(router *gin.Engine) {
+	apis := router.Group("/api/v1")
 
+	// 类别
+	apis.GET("/category", categoryController.ListCategory)
 }
 
 func startServer(srv *http.Server) {
