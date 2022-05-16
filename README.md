@@ -1,5 +1,3 @@
-# gamestuff
+# stuff
 
-## backend放后端代码
-
-## frontend放前端代码
+目前是准备整一个小程序商城框架
