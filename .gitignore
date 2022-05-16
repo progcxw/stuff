@@ -113,6 +113,5 @@ modules.xml
 
 # End of https://www.gitignore.io/api/go,jetbrains+all
 
-/mybin
 /main
 /go_build_git_nova_net_cn_nova_misc_cucc_sdwan_velocloud
