@@ -8,7 +8,7 @@ import (
 
 var (
 	LogLevel   = log.Level(config.DefaultInt("log_level", 4))
-	ListenAddr = config.DefaultString("listen_addr", ":5555")
+	ListenAddr = config.DefaultString("listen_addr", ":80")
 )
 
 func Init() {
