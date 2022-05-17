@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"gamestuff/backend/internal/errors"
-	"gamestuff/backend/internal/model"
-	"gamestuff/backend/internal/utils"
+	"stuff/internal/errors"
+	"stuff/internal/model"
+	"stuff/internal/utils"
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"

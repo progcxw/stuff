@@ -3,8 +3,9 @@ package utils
 import (
 	"context"
 	"fmt"
-	"gamestuff/backend/internal/errors"
 	"strconv"
+
+	"stuff/internal/errors"
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"

@@ -1,7 +1,7 @@
 package consts
 
 import (
-	"gamestuff/backend/internal/pkg/config"
+	"stuff/pkg/config"
 
 	log "github.com/sirupsen/logrus"
 )

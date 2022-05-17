@@ -2,14 +2,14 @@ package router
 
 import (
 	"context"
-	"gamestuff/backend/internal/controller"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
 
-	"gamestuff/backend/internal/consts"
+	"stuff/internal/consts"
+	"stuff/internal/controller"
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"

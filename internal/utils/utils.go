@@ -3,7 +3,7 @@ package utils
 import (
 	"context"
 
-	"gamestuff/backend/internal/consts"
+	"stuff/internal/consts"
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"

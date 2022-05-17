@@ -1,10 +1,10 @@
 package main
 
 import (
-	"gamestuff/backend/internal/consts"
-	"gamestuff/backend/internal/pkg/config"
-	"gamestuff/backend/internal/pkg/gorm"
-	"gamestuff/backend/internal/router"
+	"stuff/internal/consts"
+	"stuff/internal/router"
+	"stuff/pkg/config"
+	"stuff/pkg/gorm"
 )
 
 func main() {

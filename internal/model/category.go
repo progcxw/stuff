@@ -3,8 +3,7 @@ package model
 import (
 	"context"
 	"fmt"
-
-	"gamestuff/backend/internal/pkg/gorm"
+	"stuff/pkg/gorm"
 
 	log "github.com/sirupsen/logrus"
 	originOrm "gorm.io/gorm"
